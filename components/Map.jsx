@@ -21,7 +21,6 @@ const Map = ({ coordinates: results }) => {
     longitude: center.longitude,
     zoom: 11,
   });
-  console.log(selectedLocation);
   return (
     <ReactMapGL
       mapStyle="mapbox://styles/djimenezdev-0255/ckt7230kd1k7917s26ovbqh89"
