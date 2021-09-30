@@ -1,0 +1,48 @@
+.code-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.code-label {
+  margin-bottom: 16px;
+}
+.code-inputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.code-inputs input:first-of-type {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 10px;
+  margin: 0 4px 0 0;
+  border: 2px solid #4f5b66;
+  font-size: 38px;
+}
+
+.code-inputs input:not(:first-of-type) {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 10px;
+  margin: 0 4px;
+  border: 2px solid #4f5b66;
+  font-size: 38px;
+}
+.code-inputs input:focus {
+  outline: none;
+}

@@ -7,4 +7,143 @@
         active:bg-gray-100 transition transform duration-100 
         ease-out;
   }
+
+  .rdrCalendarWrapper-shadow {
+    @apply shadow-2xl overflow-hidden;
+  }
+
+  .overflow-removed {
+    @apply overflow-hidden;
+  }
+
+  /* auth button gradient  */
+  .gradient__follow {
+    @apply relative z-[1] before:absolute before:bg-radial-at-c
+    before:from-[#862739] before:via-[#bd1e59] before:to-[#d70466] 
+    before:opacity-40 before:z-[-1];
+  }
+  .button-before-sty {
+    @apply relative z-[1] before:absolute before:z-[-1] before:bg-radial-red-variant;
+  }
+  /* loading screen button in case there is error with sign in */
+  .gradient__button {
+    @apply before:absolute  before:top-0 before:right-0 before:bottom-0 before:left-0 
+    before:bg-gradient-to-r before:from-[#ff0044] before:to-[orange] before:z-[-1] 
+    before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 
+    relative z-[1];
+  }
+  .gradient__button:hover::before {
+    @apply opacity-100;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* dynamic gradient stylings*/
+
+.gradient__follow::before {
+  --size: 30;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.gradient__follow:hover::before {
+  --size: 450px;
+}
+
+.button-before-sty:before {
+  --size: 30;
+  content: "";
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.button-before-sty:hover:before {
+  --size: 450px;
+}
+
+/* miscellaneous styles  */
+.wrongIcon {
+  height: 44px !important;
+  width: 44px !important;
+}
+
+.search__shadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px;
+}
+
+/* react date range css style changes */
+.rdrCalendarWrapper {
+  width: 100%;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+
+.mobile__cal .rdrDateRangePickerWrapper {
+  width: 100%;
+}
+
+.mobile__cal .rdrMonthAndYearWrapper {
+  height: 0;
+}
+
+.mobile__cal .rdrMonth {
+  width: 100% !important;
+}
+
+.checkInOut .rdrMonth {
+  width: 38em !important;
+}
+
+.rdrMonthAndYearPickers {
+  display: none !important;
+}
+
+.rdrMonthName {
+  color: #000 !important;
+  text-align: center !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}
+
+.mapboxgl-popup-close-button {
+  top: 5px !important;
+  right: 5px !important;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30 !important;
+  background-color: white !important;
+  border-radius: 100% !important;
+  -webkit-border-radius: 100% !important;
+  -moz-border-radius: 100% !important;
+  -ms-border-radius: 100% !important;
+  -o-border-radius: 100% !important;
 }
