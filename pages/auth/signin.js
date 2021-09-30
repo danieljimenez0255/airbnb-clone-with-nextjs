@@ -81,9 +81,9 @@ const signup = ({ phoneInfo, providers }) => {
 };
 
 export async function getStaticProps() {
-  const phoneInfo = await areaCodesFunc()
-    .then((res) => res.json())
-    .catch((err) => console.error(err.message));
+  const phoneInfo = await areaCodesFunc();
+  /*    .then((res) => res.json())
+    .catch((err) => console.error(err.message)); */
 
   const providers = await getProviders();
   return {
