@@ -9,6 +9,7 @@ import OrSplit from "@/components/util/OrSplit";
 import { useRouter } from "next/router";
 import { verifyInfoDecrypt } from "@/lib/selectors";
 import LoginMessage from "@/components/Auth/LoginMessage";
+import { areaCodesFunc } from "@/lib/locationsInfo";
 
 const signup = ({ phoneInfo, providers }) => {
   const [listInfo, setListInfo] = useRecoilState(listInfoM);
@@ -80,7 +81,7 @@ const signup = ({ phoneInfo, providers }) => {
 };
 
 export async function getStaticProps() {
-  const phoneInfo = await fetch("/api/areacodes")
+  const phoneInfo = await areaCodesFunc()
     .then((res) => res.json())
     .catch((err) => console.error(err.message));
 
