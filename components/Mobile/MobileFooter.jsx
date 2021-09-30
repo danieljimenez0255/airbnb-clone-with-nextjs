@@ -4,8 +4,8 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/outline";
 import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
-import { activeLinkM } from "@/lib/atoms";
+import { useRecoilState, useSetRecoilState, useRecoilValue } from "recoil";
+import { activeLinkM, verifyInfo } from "@/lib/atoms";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +18,8 @@ import { verifyInfoDecrypt } from "@/lib/selectors";
 const MobileFooter = () => {
   const [activeLink, setActiveLink] = useRecoilState(activeLinkM);
   const { data: session, status } = useSession();
-  const [vInfo, setLoginInfo] = useRecoilState(verifyInfoDecrypt);
+  const vInfo = useRecoilValue(verifyInfoDecrypt);
+  const setLoginInfo = useSetRecoilState(verifyInfo);
   const [bottomPage, setBottomPage] = useState(false);
   const [ani, setAni] = useState(false);
 
