@@ -19,16 +19,13 @@ const EmailInputSubmit = () => {
             touchAction: "manipulation",
           }}
           onClick={async () => {
-            const checkEmail = await fetch(
-              "https://airbnb-clone-with-nextjs.vercel.app/api/auth/userCheck",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email: phoneNumberAndEmail?.email }),
-              }
-            ).then((res) => res.json());
+            const checkEmail = await fetch("/api/auth/userCheck", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email: phoneNumberAndEmail?.email }),
+            }).then((res) => res.json());
             if (
               checkEmail?.email === phoneNumberAndEmail?.email &&
               !checkEmail?.emailVerified
@@ -40,7 +37,7 @@ const EmailInputSubmit = () => {
             } else {
               signIn("email", {
                 email: phoneNumberAndEmail?.email,
-                callbackUrl: "https://airbnb-clone-with-nextjs.vercel.app",
+                callbackUrl: "/",
               });
               setEmailVerificationCheck({
                 validMessage: "0",

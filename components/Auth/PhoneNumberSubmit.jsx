@@ -10,16 +10,13 @@ const PhoneNumberSubmit = () => {
   const setPhoneVerification = useSetRecoilState(pVerification);
 
   const sendCode = async (input, type = "sms") => {
-    const sendCodeRes = await fetch(
-      "https://airbnb-clone-with-nextjs.vercel.app/api/getCode?" + "type=" + type,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ verifyValue: input }),
-      }
-    )
+    const sendCodeRes = await fetch("/api/getCode?" + "type=" + type, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ verifyValue: input }),
+    })
       .then((res) => res.json())
       .catch((err) => console.error(err.message));
     return sendCodeRes;

@@ -20,16 +20,13 @@ const PhoneCode = () => {
   const [response, setResponse] = useState("");
 
   const codeVerification = async (input, code, type) => {
-    const sendCodeRes = await fetch(
-      "https://airbnb-clone-with-nextjs.vercel.app/api/verify?" + "type=" + type,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ verifyValue: input, code: code }),
-      }
-    )
+    const sendCodeRes = await fetch("/api/verify?" + "type=" + type, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ verifyValue: input, code: code }),
+    })
       .then((res) => res.json())
       .catch((err) => console.error(err.message));
     setResponse(sendCodeRes.response);
@@ -45,7 +42,7 @@ const PhoneCode = () => {
     const specialSecret = uuidv4();
 
     // checks if user already exists
-    const checkExist = await fetch("https://airbnb-clone-with-nextjs.vercel.app/api/auth/userCheck", {
+    const checkExist = await fetch("/api/auth/userCheck", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,16 +52,13 @@ const PhoneCode = () => {
 
     // if not will add new user to mongodb
     if (!checkExist?.phone) {
-      checkPhone = await fetch(
-        "https://airbnb-clone-with-nextjs.vercel.app/api/auth/phone-create-user",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ phone: num }),
-        }
-      ).then((res) => res.json());
+      checkPhone = await fetch("/api/auth/phone-create-user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ phone: num }),
+      }).then((res) => res.json());
 
       // returned sign in info is encrypted and only decrypted when necessary
       encryptedInfo = CryptoJS.AES.encrypt(

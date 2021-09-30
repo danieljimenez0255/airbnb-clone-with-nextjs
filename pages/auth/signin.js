@@ -80,9 +80,7 @@ const signup = ({ phoneInfo, providers }) => {
 };
 
 export async function getStaticProps() {
-  const phoneInfo = await fetch(
-    "https://airbnb-clone-with-nextjs.vercel.app/api/areacodes"
-  )
+  const phoneInfo = await fetch("/api/areacodes")
     .then((res) => res.json())
     .catch((err) => console.error(err.message));
 

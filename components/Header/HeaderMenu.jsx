@@ -99,8 +99,7 @@ export default function HeaderMenu() {
                       onClick={() => {
                         if (session) {
                           signOut({
-                            callbackUrl:
-                              "https://airbnb-clone-with-nextjs.vercel.app/",
+                            callbackUrl: "/",
                           });
                         } else {
                           setLoginInfo({ loginInfo: [] });

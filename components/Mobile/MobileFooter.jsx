@@ -124,7 +124,7 @@ const MobileFooter = () => {
               } else {
                 setActiveLink(6);
                 if (session) {
-                  signOut({ callbackUrl: "https://airbnb-clone-with-nextjs.vercel.app/" });
+                  signOut({ callbackUrl: "/" });
                 } else {
                   setLoginInfo({ loginInfo: [] });
                 }

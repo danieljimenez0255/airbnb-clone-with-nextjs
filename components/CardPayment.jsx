@@ -34,7 +34,7 @@ const CardPayment = ({ isShow, setIsShow, price }) => {
 
   // this initialized the payment request by getting the price and a special secret
   useEffect(async () => {
-    await fetch("https://airbnb-clone-with-nextjs.vercel.app/api/cardPayment", {
+    await fetch("/api/cardPayment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
