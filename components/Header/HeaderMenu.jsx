@@ -120,38 +120,47 @@ export default function HeaderMenu() {
             <div className="px-1 py-1 ">
               <Menu.Item>
                 {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "text-red-400" : "text-gray-900"
-                    } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                    style={{ backgroundColor: active && "#DBEAFE" }}
-                  >
-                    Host Your Home
-                  </button>
+                  <a href="https://www.airbnb.com/host/homes" target="_blank">
+                    <button
+                      className={`${
+                        active ? "text-red-400" : "text-gray-900"
+                      } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                      style={{ backgroundColor: active && "#DBEAFE" }}
+                    >
+                      Host Your Home
+                    </button>
+                  </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "text-red-400" : "text-gray-900"
-                    } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                    style={{ backgroundColor: active && "#DBEAFE" }}
+                  <a
+                    href="https://www.airbnb.com/host/experiences?from_nav=1"
+                    target="_blank"
                   >
-                    Host an Experience
-                  </button>
+                    <button
+                      className={`${
+                        active ? "text-red-400" : "text-gray-900"
+                      } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                      style={{ backgroundColor: active && "#DBEAFE" }}
+                    >
+                      Host an Experience
+                    </button>
+                  </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "text-red-400 " : "text-gray-900"
-                    } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
-                    style={{ backgroundColor: active && "#DBEAFE" }}
-                  >
-                    Help
-                  </button>
+                  <a href="https://www.airbnb.com/help/home" target="_blank">
+                    <button
+                      className={`${
+                        active ? "text-red-400 " : "text-gray-900"
+                      } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                      style={{ backgroundColor: active && "#DBEAFE" }}
+                    >
+                      Help
+                    </button>
+                  </a>
                 )}
               </Menu.Item>
             </div>
