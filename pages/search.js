@@ -82,7 +82,10 @@ const Search = ({ newResults, locations }) => {
 
   // activates during mobile search to remove scroll
   useEffect(() => {
-    if (mobileS < 5 || (activeLink >= 2 && headerDisplay < 950)) {
+    if (
+      mobileS < 5 ||
+      (activeLink >= 2 && activeLink < 6 && headerDisplay < 950)
+    ) {
       document?.querySelector("body")?.classList?.add("overflow-removed");
     } else {
       document?.querySelector("body")?.classList?.remove("overflow-removed");
