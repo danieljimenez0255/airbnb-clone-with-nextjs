@@ -16,7 +16,6 @@ const MobileLocations = ({ locations }, ref) => {
               <div
                 key={item.city + " " + i}
                 onClick={() => {
-                  alert("yes");
                   setSearchInput([item.city, item.country]);
 
                   setMobileS(1);
