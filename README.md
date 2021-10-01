@@ -1,29 +1,63 @@
-# Next.js + Tailwind CSS Example
+# Airbnb Clone built with Next JS 
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Super excited to share this project! 
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+### Some of the tools I used to build this Airbnb Clone:
 
-## Preview
+  ## NextJS
+  ### This is the powerful ReactJS Framework that takes building websites to the next level.
+  - This project utilizes the built in page routing, built in api routes, ssg, ssr & more
+  - Used by **Netflix**, **Hulu**, **TikTok**, **Nike** & more
+  - This is a great framework and you can learn more through the link below:
+  - [Click Me to Learn about NextJS](https://nextjs.org/learn/basics/create-nextjs-app)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+  ## Tailwind CSS
+  ### This is a an amazing utility class based CSS framework 
+  - Easy to integrate utilities to achieve the styles you want
+  - Significantly reduces the amout of css you have to write
+  - All Powerful JIT Mode to serve the utilities with lightning speed
+  - Click the link below to learn more about it:
+  - [Click Me to Learn more about TailwindCSS](https://tailwindcss.com/)
+  - [Click Me to See how to intergrate with NextJS](https://tailwindcss.com/docs/guides/nextjs)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+  ## MapBox
+  ### Powerful Map Tool for developers
+  - Easily Customizable maps via Mapbox Studio 
+  - Easy to integrate into NextJs via **react-maps-gl** 
+  - Used by **BMW**, **Instacart**, **Toyota**, **National Geographic** & more
+  - [Click Me to Check Out more about Mapbox](https://www.mapbox.com/)
 
-## Deploy your own
+  ## NextAuth
+  ### Powerful Auth tool that supports NextJS SSR 
+  - Easy to use with any Oath Provider such as **Google**, **Facebook**, **Apple** & more
+  - Supports passwordless sign in 
+  - Can Integrate any database via an adapter to store/persist user login
+  - Very secure as it is handled all by the server 
+  - [Click me to learn more and see how to integrate Next Auth](https://next-auth.js.org/)
+ 
+  ## Twilio
+  ### Powerful tool for building communication apps
+  - Can be used to build essentially any type of communication 
+  - Proven and trusted to easily communicate on a global scale 
+  - Used by **Airbnb**, **Uber**, **Chime**, **Postmates** & more 
+  - [Click me to learn more about Twilio](https://www.twilio.com/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+  ## Stripe 
+  ### Powerful payment infrastructure for the internet 
+  - Easy to integrate with amazing documentation
+  - full control over the payment process
+  - Used by **Amazon**, **Slack**, **Shopify**, **Zoom** & more
+  - [Click Me to Learn more about Stripe](https://stripe.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+  ## Recoil
+  ### A new way of state management for React
+  - Minimal and thinks like React
+  - Allows for implementation of persistance & more
+  - This library was built by **Facebook**
+  - [Click me to learn more about Recoil](https://recoiljs.org/)
 
-## How to use
+These are just a few of the amazing tools I used for this project! I will be showing how to put this together soon 
+and I will be updating the project over time. The link to the live site is below if you want to see the final project!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# Here is the link to the live site 
+[Click me to see the live Airbnb-Clone](https://airbnb-clone-with-nextjs.vercel.app/)
