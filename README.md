@@ -12,12 +12,12 @@ Super excited to share this project!
   - [Click Me to Learn about NextJS](https://nextjs.org/learn/basics/create-nextjs-app)
 
   ## Tailwind CSS
-  ### This is a an amazing utility class based CSS framework 
+  ### This is a amazing utility class based CSS framework 
   - Easy to integrate utilities to achieve the styles you want
   - Significantly reduces the amout of css you have to write
   - All Powerful JIT Mode to serve the utilities with lightning speed
   - Click the link below to learn more about it:
-  - [Click Me to Learn more about TailwindCSS](https://tailwindcss.com/)
+  - [Click Me to Learn more about Tailwind CSS](https://tailwindcss.com/)
   - [Click Me to See how to intergrate with NextJS](https://tailwindcss.com/docs/guides/nextjs)
 
   ## MapBox
@@ -28,9 +28,9 @@ Super excited to share this project!
   - [Click Me to Check Out more about Mapbox](https://www.mapbox.com/)
 
   ## NextAuth
-  ### Powerful Auth tool that supports NextJS SSR 
+  ### Powerful Auth tool that supports NextJS  
   - Easy to use with any Oath Provider such as **Google**, **Facebook**, **Apple** & more
-  - Supports passwordless sign in 
+  - Supports passwordless sign in & custom sign in providers
   - Can Integrate any database via an adapter to store/persist user login
   - Very secure as it is handled all by the server 
   - [Click me to learn more and see how to integrate Next Auth](https://next-auth.js.org/)
