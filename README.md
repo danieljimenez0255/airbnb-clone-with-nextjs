@@ -60,4 +60,4 @@ These are just a few of the amazing tools I used for this project! I will be sho
 and I will be updating the project over time. The link to the live site is below if you want to see the final project!
 
 # Here is the link to the live site 
-[Click me to see the live Airbnb-Clone](https://airbnb-clone-with-nextjs.vercel.app/)
+[Click me to see the live Airbnb-Clone](https://dj-airbnb-clone.vercel.app/)
